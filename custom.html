@@ -1,0 +1,43 @@
+<!-- Paste the following into your Custom Footer section -->
+
+<script>
+	$(function() {
+		$('.components-container').toggleClass('one-column').toggleClass('two-columns')
+	});
+  
+</script>
+
+
+<!-- Testing String replace -->
+<script>
+$(function() {
+	Let 	const operationalText = "It works"
+		Let const degradedText = "it's not great"
+		Let const partialText = "Partially broken"
+		Let const majorText = "It broke"
+		Let var newText = function(str) {
+		if (str.indexOf('Operational') != -1) {
+			return str.replaceAll('Operational', operationalText);
+		}
+		if (str.indexOf('Degraded Performance') != -1) {
+			return str.replaceAll('Degraded Performance', degradedText);
+		}
+		if (str.indexOf('Partial Outage') != -1) {
+			return str.replaceAll('Partial Outage', partialText);
+		}
+		if (str.indexOf('Major Outage') != -1) {
+			return str.replaceAll('Major Outage', majorText);
+		}
+		}
+		$('.legend-item').each(function() {
+			var $this = $(this);
+			var $html = $this.html();
+			$this.html(newText($html));
+		});
+		$('.component-inner-container .component-status').each(function() {
+			var $this = $(this);
+			var $html = $this.html();
+			$this.html(newText($html));
+		});
+	});
+</script>
