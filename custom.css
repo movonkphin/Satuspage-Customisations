@@ -1,0 +1,151 @@
+// defines the width of the content
+.container {
+    width: 90%;
+    max-width: 850px;
+}
+
+// the default font-size used on the page
+.font-regular {
+    font-size:1rem; // 16px
+    line-height:1.5rem;
+    @media screen and (max-width: 650px) {
+        font-size:.875rem; // 14px
+        line-height:1.3125rem
+    }
+}
+
+.font-large {
+    font-weight:500;
+    font-size:1.25rem; // 20px;
+    line-height:1.875rem;
+    @media screen and (max-width: 650px) {
+        font-size:1.125rem; // 18px;
+        line-height:1.6875rem;
+    }
+   @media screen and (max-width: 450px) {
+        font-size:1rem; // 16px
+        line-height:1.5rem;     
+    }
+}
+
+.font-largest {
+    font-weight:500;
+    font-size:1.75rem; // 28px;
+    line-height:2.625rem;
+    @media screen and (max-width: 650px) {
+        font-size:1.375rem; // 22px;
+        line-height:2.0625rem;
+    }
+    @media screen and (max-width: 450px) {
+        font-size:1.125rem; // 18px;
+        line-height:1.6875rem;
+    }
+}
+
+
+/* USED TO SHOW PRIORITY LEVEL IN TEXT FORM /
+
+  /* PRIORITY CRITICAL*/   
+.layout-content.status.status-index .status-day .update-title.impact-critical a,
+.layout-content.status.status-index .status-day .update-title.impact-critical a:hover,
+.layout-content.status.status-index .page-status.status-critical,
+.layout-content.status.status-index .unresolved-incident.impact-critical .incident-title::before {
+  color: white;
+  content: url("https://drive.google.com/uc?export=view&id=12sTfmz9ksEuooJ50sjRdxsCWbIhlFLQG") " P1 -  ";
+}
+
+
+/* PRIORITY MAJOR*/   
+.layout-content.status.status-index .status-day .update-title.impact-major a,
+.layout-content.status.status-index .status-day .update-title.impact-major a:hover,
+.layout-content.status.status-index .page-status.status-major,
+.layout-content.status.status-index .unresolved-incident.impact-major .incident-title::before {
+  	color: white;
+  content: url("https://drive.google.com/uc?export=view&id=12sTfmz9ksEuooJ50sjRdxsCWbIhlFLQG") " P2 -  ";
+}
+
+  /* PRIORITY MINOR */   
+.layout-content.status.status-index .status-day .update-title.impact-minor a,
+.layout-content.status.status-index .status-day .update-title.impact-minor a:hover,
+.layout-content.status.status-index .page-status.status-minor,
+.layout-content.status.status-index .unresolved-incident.impact-minor .incident-title::before {
+  	color: White;
+  content: url("https://drive.google.com/uc?export=view&id=12sTfmz9ksEuooJ50sjRdxsCWbIhlFLQG") " P3 -  ";
+}
+
+  /* PRIORITY NONE*/   
+.layout-content.status.status-index .status-day .update-title.impact-none a,
+.layout-content.status.status-index .status-day .update-title.impact-none a:hover,
+.layout-content.status.status-index .page-status.status-none,
+.layout-content.status.status-index .unresolved-incident.impact-none .incident-title::before {
+  	color: white;
+  content: url("https://drive.google.com/uc?export=view&id=12sTfmz9ksEuooJ50sjRdxsCWbIhlFLQG") " P4 -  ";
+}
+
+  /* PRIORITY MAINTENANCE*/   
+.layout-content.status.status-index .status-day .update-title.impact-maintenance a,
+.layout-content.status.status-index .status-day .update-title.impact-maintenance a:hover,
+.layout-content.status.status-index .page-status.status-maintenance,
+.layout-content.status.status-index .unresolved-incident.impact-maintenance .incident-title::before {
+  	color: white;
+  content: url("https://drive.google.com/uc?export=view&id=12sTfmz9ksEuooJ50sjRdxsCWbIhlFLQG") "Maintenance - ";
+}
+
+/* NEW INCIDENT LIST TWEAKS */
+
+/* SHRINK GAP IN INCIDENT LIST */
+.layout-content.status.status-index .unresolved-incidents .unresolved-incident {
+    margin-top: 5px;
+}
+
+ /* HIDE UPDATES IN INCIDENT LIST */
+ .updates {
+  display: none;
+  visibility: hidden;
+ }
+
+/* OLD INCIDENT LIST TWEAKS */
+
+/* REMOVE UPDATE DATA */
+.update  {
+  display: none;
+  visibility: hidden;
+ }
+
+
+.status-day.font-regular .incident-container .incident-title.impact-critical.font-large::before {
+  	color: #e74c3c;
+  content: url("https://drive.google.com/uc?export=view&id=1631BM84IHi98XzQhitBnqvW6FLLo3GYH") " P1 -  ";
+}
+
+.status-day.font-regular .incident-container .incident-title.impact-major.font-large::before {
+  	color: #e67e22;
+  content: url("https://drive.google.com/uc?export=view&id=1LnDZsTJrG6OszIZkcT4p2CqnAkLYNTeS") " P2 -  ";
+}
+
+.status-day.font-regular .incident-container .incident-title.impact-minor.font-large::before {
+  	color: ##DFE619;
+  content: url("https://drive.google.com/uc?export=view&id=1Nf5WhQcIK6jHSqjfOxk5PdVApdRvy1qn") " P3 -  ";
+}
+
+.status-day.font-regular .incident-container .incident-title.impact-none.font-large::before {
+  	color: Black;
+  content: url("https://drive.google.com/uc?export=view&id=10wa21UVRhCcee0KST7MG0VIBm2aVjSBT") " P4 -  ";
+}
+
+
+.status-day.font-regular .incident-container .incident-title.impact-maintenance.font-large::before {
+  	color: Black;
+  content: url("https://drive.google.com/uc?export=view&id=10wa21UVRhCcee0KST7MG0VIBm2aVjSBT") " Maintenance -  ";
+}
+
+
+/* testing column stuff 
+.components-container.two-columns {
+  border: 5px solid black;
+}
+
+.component-container.border-color.is-group {
+  border: 5px solid black;
+}
+*/
